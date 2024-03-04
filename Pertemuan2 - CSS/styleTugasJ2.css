@@ -1,0 +1,90 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: url(img/background.jpeg);
+}
+body {
+    background: url('img/background.jpeg') center/cover fixed no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container-satu{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.kolom-utama{
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    order: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.sidebar-satu{
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;  
+    order: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.sidebar-dua{
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;  
+    order: 3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.sidebar-dua h3{
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10%;
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+}
+.sidebar-satu h3{
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10%;
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+}
+.kolom-utama h2{
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10%;
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+}
+.sidebar-satu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar-satu ul li{
+    margin-bottom: 10px;
+}
+.sidebar-satu ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.sidebar-satu ul li a:hover{
+    color: #007bff;
+}
