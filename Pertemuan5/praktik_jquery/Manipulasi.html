@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleCSS.css">
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+        $(document).ready(function(){
+            // Membuat tampilan "blue" pada elemen h1, h2, dan p ketika tombol btn1 ditekan
+            $(".btn1").click(function(){
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+            // Menghapus kelas "blue" dari elemen h1, h2, dan p ketika tombol btn2 ditekan
+            $(".btn2").click(function(){
+                $("h1, h2, p").removeClass("blue");
+            });
+            // Membuat background-color menjadi kuning dan font berubah untuk elemen h1, h2, p, dan div ketika tombol btn3 ditekan
+            $(".btn3").click(function(){
+                $("h1, h2, p, div").css({"background-color": "yellow", "font-size": "100%"});
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <p>This is a paragraph.</p>
+        <p>this is another paragraph.</p>
+        <p>This is some important text!</p>
+        
+        // tombol untuk menguabh tampilan elemen elemen pada output
+
+        <button class="btn1">Add Classes to elements</button>
+        <button class="btn2">Remove Classes to element</button>
+        <button class="btn3">Set Classes to element</button>
+    </body>
+</html>
