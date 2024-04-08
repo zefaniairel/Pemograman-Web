@@ -1,0 +1,84 @@
+.upload-form-container {
+    max-width: 400px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+/* 
+- upload-form-container : kelas yg mendefinisikan gaya untuk kontainer form uploa
+- margin: 0 auto; ini untuk mengatur jarakdari sisi luar kontainer
+- padding untuk mengtur jarak antara konten dantepi kontainer
+- border mengatur garis tepi kontainer
+- border radius untk mengatur sudut sudut kontainer
+- text align mengatur penempatan teks dalam kontainer menjadi tengah
+*/
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+/* 
+- font size untuk ukuran dan color untuk mengatur warna teks
+*/
+
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+/*
+- displey flex untuk mengatr posisi elemen secara horizontal.
+- align items untuk memusatkan elemen vertikal
+- justify content untuk membuat konten berada ditengah
+*/
+
+.file-input {
+    display: none;
+}
+/* 
+- file input: Ini adalah kelas untuk input file yang sebenarnya, yang akan disembunyikan dari tampilan pengguna.
+*/
+
+.file-label {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*
+Ini adalah kelas untuk label yang menampilkan tombol untuk memilih file
+Ini memiliki latar belakang biru, teks putih, dan properti lainnya seperti padding, border-radius, dan cursor untuk memberikan tampilan yang menarik dan menunjukkan bahwa ini adalah elemen interaktif.
+*/
+
+.upload-button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+/*
+opacity diatur 0.5 yg artinya bahwa tombol ini dalam keadaan non-aktif
+*/
+
+.upload-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+/* 
+upload-button: Ini adalah kelas untuk tombol unggah.
+Ini adalah pseudo-kelas untuk tombol unggah yang dalam keadaan non-aktif
+*/
+
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* ni adalah kelas untuk menampilkan status unggahan */
