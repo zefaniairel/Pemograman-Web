@@ -1,0 +1,51 @@
+body {
+  background-color: antiquewhite; /* warna latar belakang form */
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #407800; /* warna form */
+  border-radius: 10px; /* sudut bulatan untuk keempat sudut */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* untuk efek bayangan */
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"] {
+  width: calc(100% - 16px); /* lebar ini sesuai dengan container */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #e0fdbf; 
+  border-radius: 5px; /* sudut bulatan untuk input */
+}
+
+input[type="submit"] {
+  width: calc(100% - 16px);
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* efek transisi saat hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-bottom: 50px;
+}
+
+.image-container img {
+  width: 75%; /* ukuran gambar */
+  height: auto;
+  border-radius: 5%; /* agar gambar jadi agak sedikit melengkung pinggirannya */
+  border: 2px solid #000000; /* warna border untuk gambar */
+}

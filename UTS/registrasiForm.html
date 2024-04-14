@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Open Volunteer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container">
+        <div class="container">
+        <img src="OPENVOLUNTEER.jpg" alt="Gambar Profil">
+        <h2>Register Open Volunteer</h2>
+        <form id="registerForm" action="registrasiForm.php" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="nama_panjang" placeholder="Nama Panjang" required>
+            <input type="text" name="nama_panggilan" placeholder="Nama Panggilan" required>
+            <input type="text" name="nomor" placeholder="Nomor HP" required>
+            <input type="text" name="tempat_lahir" placeholder="Tempat Lahir" required>
+            <input type="date" name="tanggal_lahir" required>
+            <input type="text" name="asal" placeholder="Alamat saat ini" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="perempuan">Perempuan</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <textarea name="alasan" placeholder="Alasan ingin ikut volunteer" required></textarea>
+            <input type="submit" value="Daftar">
+        </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#registerForm').submit(function(event){
+            event.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                type: 'POST',
+                url: 'registrasiForm.php',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    alert(response); // menampilkan pesan dari server
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
